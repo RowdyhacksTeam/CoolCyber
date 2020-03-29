@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="icon" href="favicon.ico?">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom CSS-->
@@ -20,42 +22,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-		<div class="jumbotron jumbotron-fluid">
+		<div class="jumbotronjumbotron-fluid">
 			<div class="container">
  		 		<h1 class="display-4">Resources</h1>
  		 		<p class="lead">Want to learn more about a certain topic? Check out these wonderful resources.</p>
 			</div>	
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">Menu</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="resources.html">Resources <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#start Here">Start Here</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Activities
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#What do you know?">What do you know?</a>
-              <a class="dropdown-item" href="contact.html">Contact Us</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <!-- Load Navbar from nav.html-->
+    <div class="nav-iframe">
+      <iframe id="form-iframe" src="nav.html" frameborder=0 width="100%" height="350" onload="AdjustIframeHeightOnLoad()"></iframe>
+    </div>
+    <script type="text/javascript">
+      function AdjustIframeHeightOnLoad() { document.getElementById("form-iframe").style.height = document.getElementById("form-iframe").contentWindow.document.body.scrollHeight + "px"; }
+      function AdjustIframeHeight(i) { document.getElementById("form-iframe").style.height = parseInt(i) + "px"; }
+    </script>
 
     <br>
 
@@ -64,7 +45,7 @@
             <div class="col-sm">
                 <h2>General</h2>
                 <ul>
-                    <li>Item 1</li>
+                    <li><a href="https://www.cybrary.it/">Cybrary</a></li>
                     <li>Item 2</li>
                 </ul>
             </div>
@@ -72,6 +53,9 @@
                 <h2>Programming</h2>
                 <ul>
                     <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Docs</a></li>
+                    <li><a href="https://docs.python.org/3/">Python 3 Docs</a></li>
                 </ul>
             </div>
             <div class="col-sm">
@@ -79,18 +63,19 @@
                 <ul>
                     <li><a href="https://www.youtube.com/playlist?list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd">Professor Messer: Network+ Training Course</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers">Common Ports</a></li>
-                    <li><a href=""></a></li>
                     <li><a href="https://www.wireshark.org/docs/">Wireshark</a></li>
                 </ul>
             </div>
         </div>
-        <br>
         <div class="row">
             <div class="col-sm">
                 <h2>Blogs & News</h2>
                 <ul>
                     <li><a href="https://krebsonsecurity.com/">Krebs on Security</a></li>
+                    <li><a href="https://www.schneier.com/">Schneier on Security</a></li>
                     <li><a href="https://www.wired.com/category/security/">Wired Security</a></li>
+                    <li><a href="https://www.cio.com/">CIO</a></li>
+                    <li><a href="https://cve.mitre.org/">Common Vulnerabilities and Exposures</a></li>
                 </ul>
             </div>
             <div class="col-sm">
@@ -99,6 +84,8 @@
                     <li><a href="https://linuxjourney.com/">Linux Journey</a></li>
                     <li><a href="https://wiki.archlinux.org/">Arch Wiki</a></li>
                     <li><a href="https://www.tldp.org/LDP/Bash-Beginners-Guide/html/">Bash Guide for Beginners</a></li>
+                    <li><a href="https://linux.die.net/man/">Linux Man Pages</a> (or the <code>man</code> command)</li>
+                    <li><a href="https://www.digitalocean.com/community/tutorials">DigitalOcean Tutorials</a></li>
                 </ul>
             </div>
             <div class="col-sm">
@@ -106,8 +93,17 @@
                 <ul>
                     <li><a href="https://overthewire.org/wargames/">OverTheWire</a></li>
                     <li><a href="https://www.hackthebox.eu/">Hack the Box</a></li>
+                    <li><a href="https://www.vulnhub.com/">Vulnhub</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <h2></h2>
+          </div>
+          <div class="col-sm">
+
+          </div>
         </div>
     </div>
   </body>

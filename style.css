@@ -1,3 +1,96 @@
 body {
-    background-image: url("img/maxresdefault.jpg");
+    background-image: url("img/concordian_cityscape_by_seerlight_dch36q1-fullview.jpg");
    }
+
+.row {
+    background-color: #eeeeee;
+}
+
+.col-sm {
+    border-radius: 15px 15px 15px 15px;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.6);
+}
+   
+.h2{
+       color: cornsilk;
+   }
+
+.transparent{
+    opacity: 0.5;
+}
+.transparent:hover{
+    opacity: 0.5;
+    
+}.div{
+    display: block;
+}
+.text-index-column {
+    margin-bottom: 10px;
+}
+.text-profile {
+    width: 50%;
+}
+.text-inside {
+    background: #333;
+    background-position: top;
+    -ms-background-position-x: center;
+    -ms-background-position-y: top;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.layout-page-content {
+    flex-grow: 1;
+    padding-top: 10px;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.iframe {
+    resize: vertical;
+    overflow: hidden;
+}
+
+.jumbotron-jumbotron-fluid{
+    padding: 60px;
+    text-align: left;
+    background: #000a08;
+    color: white;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.text-index-container {
+    padding-top: 15px;
+}
+
+.youtube{
+    position: relative;
+    left:  1050px;
+    bottom: 610px;
+}
+
+.nav-button {
+    background-color: transparent;
+  border: none;
+  color: #9a9da0;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 
+}
+.text-inside {
+    background: #333;
+    background-position: top;
+    -ms-background-position-x: center;
+    -ms-background-position-y: top;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
